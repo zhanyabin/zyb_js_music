@@ -1,0 +1,15 @@
+.tatle {
+    float: left;
+    margin-left: 20px;
+}
+.mod_player_login {
+    float: right;
+    margin: 40px;
+}
+.Signin {
+    margin-right: 13px;
+}
+.mod_player{
+    margin-top: 13px;
+    min-width: 1700px;
+}

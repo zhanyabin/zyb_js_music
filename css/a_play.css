@@ -1,0 +1,13 @@
+.a_play {
+    text-decoration:none;
+    margin-right: 40px;
+}
+.a_play:link {
+    color: #e1e1e0;
+}
+.a_play:visited {
+    color: #e1e1e0;
+}
+.a_play:hover {
+    color: #ffffff;
+}

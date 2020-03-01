@@ -1,0 +1,68 @@
+/* 歌曲列表样式 */
+.gbms{
+    height: 85%;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #CACAC9;
+    overflow: auto;
+}
+.gbms-1::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+}
+.gbms-1::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: rgba(112,112,112, 0.6);
+}
+.gbms-1::-webkit-scrollbar-thumb:hover {/*移入滚动条时*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: rgba(112,112,112, 1);
+}
+.gbms-1::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: none;
+}
+
+.songlist_sprite {
+    margin-right: 40px;
+}
+.songlist_header_name{
+    width: 557px;
+}
+.songlist__header_author{
+    width: 210px;
+}
+.songlist__header_time{
+    width: 50px;
+}
+.songlist_header {
+    padding-bottom: 20px;
+}
+.songlist_list {
+    padding-bottom: 20px;
+}
+
+.songlists {
+    padding-bottom: 20px;
+}
+.songlists .songBox {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    margin-right: 20px;
+    float: left;
+}
+.song-name {
+    width: 575px;
+    cursor: pointer;
+    /*float: left;*/
+}
+.song-author {
+    width: 208px;
+    float: left;
+}
+.song-time {
+    float: left;
+}

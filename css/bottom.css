@@ -4,5 +4,8 @@
     margin-left: 80px;
     width: 85%;
     height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     /* background-color: #000000; */
 }

@@ -19,9 +19,9 @@
             }
             /* 底部音乐控件 */
             .player_music {
-                position: absolute;
-                top: 84%;
-                left: 300px;
+                /*position: absolute;*/
+                /*top: 84%;*/
+                /*left: 300px;*/
             }
             /*.player_music {*/
             /*     color: #801b17;*/
@@ -30,16 +30,16 @@
             /*}*/
             #play_mod {
                 /* float: right; */
-                position: absolute;
-                top: 86%;
-                left: 1100px;
+                /*position: absolute;*/
+                /*top: 86%;*/
+                /*left: 1100px;*/
             }
             .play-volume {
                 width: 100px;
                 height: 40px;
-                position: absolute;
-                top: 86%;
-                left: 950px;
+                /*position: absolute;*/
+                /*top: 86%;*/
+                /*left: 950px;*/
                 display: flex;
             }
             .volume {
@@ -154,51 +154,57 @@
             </div>
             <!-- 主体尾部 -->
             <div class="player_ft">
-                <a id="id-playprevious" href="javascript:;" class="a_play" title="ctl+←">
-                    <i class="fas fa-step-backward fa-2x"></i>
-                </a>
-                <a href="javascript:;" class="a_play"  id="id-play" title="[空格]">
-                    <i id="id-tu-play" class="fas fa-play fa-2x"></i>
-                    <!-- <i class="fas fa-pause fa-5x"></i> -->
-                </a>
-                <a id="id-playnext" href="javascript:;" class="a_play" title="ctl+→">
-                    <i class="fas fa-step-forward fa-2x"></i>
-                </a>
-                <!-- 播放进度条区块 -->
-                <div class="player_music" data-index="0">
-                    <!-- 时间轴 -->
-                    <div class="play_time">
-                        <span id="id-dangqiantime">0:00</span>
-                        <span>/</span>
-                        <span id="id-zongtime">0:00</span>
-                    </div>
-                    <!-- 进度条 -->
-                    <div id="demo">
-                        <div class="progress">
-                            <div class="progress-bar">
-                                <div class="progress-thumb"></div>
+                <div>
+                    <a id="id-playprevious" href="javascript:;" class="a_play" title="ctl+←">
+                        <i class="fas fa-step-backward fa-2x"></i>
+                    </a>
+                    <a href="javascript:;" class="a_play"  id="id-play" title="[空格]">
+                        <i id="id-tu-play" class="fas fa-play fa-2x"></i>
+                        <!-- <i class="fas fa-pause fa-5x"></i> -->
+                    </a>
+                    <a id="id-playnext" href="javascript:;" class="a_play" title="ctl+→">
+                        <i class="fas fa-step-forward fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <!-- 播放进度条区块 -->
+                    <div class="player_music" data-index="0">
+                        <!-- 时间轴 -->
+                        <div class="play_time">
+                            <span id="id-dangqiantime">0:00</span>
+                            <span>/</span>
+                            <span id="id-zongtime">0:00</span>
+                        </div>
+                        <!-- 进度条 -->
+                        <div id="demo">
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <div class="progress-thumb"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 播放音量按钮 -->
-                <div class="play-volume">
-                    <a href="javascript:;" id="volume-min" class="volume" title="音量减少">
-                        <i class="fas fa-volume-down fa-2x"></i>
-                    </a>
-                    <a href="javascript:;" id="volume-max" class="volume" title="音量增加">
-                        <i class="fas fa-volume-up fa-2x"></i>
-                    </a>
+                <div style="margin-left: 30px;">
+                    <!-- 播放音量按钮 -->
+                    <div class="play-volume">
+                        <a href="javascript:;" id="volume-min" class="volume" title="音量减少">
+                            <i class="fas fa-volume-down fa-2x"></i>
+                        </a>
+                        <a href="javascript:;" id="volume-max" class="volume" title="音量增加">
+                            <i class="fas fa-volume-up fa-2x"></i>
+                        </a>
+                        <a id="play_modes" href="javascript:;" data-mode="order" title="顺序播放">
+                            <!--顺序 -->
+                            <i id="play_mod" class="fas fa-align-justify fa-2x"></i>
+                            <!-- 随机 -->
+                            <!-- <i class="fas fa-random"></i> -->
+                            <!-- 单曲 -->
+                            <!-- <i class="fas fa-redo"></i> -->
+                        </a>
+                    </div>
+                    <!-- 播放模式 -->
                 </div>
-                <!-- 播放模式 -->
-                <a id="play_modes" href="javascript:;" data-mode="order" title="顺序播放">
-                    <!--顺序 -->
-                    <i id="play_mod" class="fas fa-align-justify fa-2x"></i>
-                    <!-- 随机 -->
-                    <!-- <i class="fas fa-random"></i> -->
-                    <!-- 单曲 -->
-                    <!-- <i class="fas fa-redo"></i> -->
-                </a>
                 <audio src="https://api.itooi.cn/tencent/url?id=0010e3Cd0kZt9S" id="id-audio-player"></audio>
             </div>
         </div>
